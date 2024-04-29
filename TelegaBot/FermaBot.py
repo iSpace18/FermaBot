@@ -2,13 +2,13 @@ from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types.web_app_info import WebAppInfo
 import json
 
-bot = Bot('токен')
+bot = Bot('6539748697:AAGohquLKU_YNN_337Pdqph1Z6ILs01RsRE')
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start']) 
 async def start(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('Открыть веб страницу', web_app=WebAppInfo(url='https://koracon.github.io/VSC/?')))
+    markup.add(types.KeyboardButton('Открыть веб страницу', web_app=WebAppInfo(url='https://www.youtube.com')))
     await message.answer('Привет, мой друг', reply_markup=markup)
 
 @dp.message_handler(content_types=['web_app_data'])
