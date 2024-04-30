@@ -1,26 +1,27 @@
 * {
     padding: 0;
     margin: 0;
+    color: white;
 }
 
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: rgb(221, 119, 119);
+    background-color: rgb(0, 0, 0);
 }
 
 .osn-container {
     margin: 0 auto;
     max-width: 560px;
     max-height: 645px;
-    background-color: aqua;
+    background-color: rgb(85, 85, 85);
 }
 
 .container {
-    margin-top: 100px;
+    text-align: center;
 }
 
 #counter {
+    text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -34,3 +35,20 @@ body {
     cursor: pointer;
 }
 
+.nav-bottom {
+    display: flex;
+
+}
+
+.block {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    border-radius: 7px;
+    text-align: center;
+    flex: 1;
+    display: block;
+}
