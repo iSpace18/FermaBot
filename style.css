@@ -1,56 +1,74 @@
 * {
-    padding: 0;
-    margin: 0;
-    color: white;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  background-color: rgb(0, 0, 0);
+  
 }
 
+
+
 .osn-container {
-    padding-top: 45px;
-    margin: 0 auto;
-    max-width: 560px;
-    max-height: 645px;
-    background: linear-gradient(135deg, #e55d88a4 0%, #5fc3e4ab 100%);
+  padding-top: 45px;
+  margin: 0 auto;
+  max-width: 560px;
+  height: 645px;
+  background: linear-gradient(135deg, #e55d88a4 0%, #5fc3e4ab 100%);
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 #counter {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 80px;
+
+}
+
+.coin {
+  position: absolute;
+  margin-left: 200px;
+  display: block;
+  width: 30px;
+  height: 30px;
 }
 
 #clickButton {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+#clickButton > img {
+  height: 400px;
+  width: 400px;
 }
 
 .nav-bottom {
-    display: flex;
-
+  display: flex;
 }
+
+
 
 .block {
-    font-size: 15px;
-    margin-left: 5px;
-    padding: 5px;
-    border-radius: 7px;
-    text-align: center;
-    flex: 1;
-    display: block;
-    background-color: #ffffff3f;
-    margin-bottom: 20px;
+  font-size: 15px;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 7px;
+  text-align: center;
+  flex: 1;
+  display: block;
+  background-color: #ffffff3f;
+  margin-bottom: 20px;
 }
-
