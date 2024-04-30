@@ -8,7 +8,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start']) 
 async def start(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('Открыть веб страницу', web_app=WebAppInfo(url='https://www.youtube.com')))
+    markup.add(types.KeyboardButton('Открыть веб страницу', web_app=WebAppInfo(url='https://ispace18.github.io/FermaBot')))
     await message.answer('Привет, мой друг', reply_markup=markup)
 
 @dp.message_handler(content_types=['web_app_data'])

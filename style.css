@@ -9,6 +9,13 @@ body {
     background-color: rgb(221, 119, 119);
 }
 
+.osn-container {
+    margin: 0 auto;
+    max-width: 560px;
+    max-height: 645px;
+    background-color: aqua;
+}
+
 .container {
     margin-top: 100px;
 }
@@ -27,5 +34,3 @@ body {
     cursor: pointer;
 }
 
-
-@media 
