@@ -10,10 +10,11 @@ body {
 }
 
 .osn-container {
+    padding-top: 45px;
     margin: 0 auto;
     max-width: 560px;
     max-height: 645px;
-    background-color: rgb(85, 85, 85);
+    background: linear-gradient(135deg, #e55d88a4 0%, #5fc3e4ab 100%);
 }
 
 .container {
@@ -33,6 +34,7 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .nav-bottom {
@@ -42,12 +44,13 @@ body {
 
 .block {
     font-size: 15px;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-left: 5px;
     padding: 5px;
-    border-style: solid;
     border-radius: 7px;
     text-align: center;
     flex: 1;
     display: block;
+    background-color: #ffffff3f;
+    margin-bottom: 20px;
 }
+
