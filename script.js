@@ -13,8 +13,8 @@ clickButton.addEventListener('click', (event) => {
     localStorage.setItem('clickedCoins', counter); // Save the clicked coins to localStorage
 
     document.getElementById('clickButton').addEventListener('click', function() {
-        this.style.transform = 'scale(0.9)';
-        this.style.transition = 'transform 0.1s';
+        this.style.transform = 'scale(0.98)';
+        this.style.transition = 'transform 0.0s';
       
         setTimeout(() => {
           this.style.transform = 'scale(1)';

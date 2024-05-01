@@ -11,9 +11,9 @@ async def start(message: types.Message):
     markup.add(types.KeyboardButton('Открыть веб страницу', web_app=WebAppInfo(url='https://ispace18.github.io/FermaBot/')))
     await message.answer('Привет, мой друг', reply_markup=markup)
 
-@dp.message_handler(content_types=['web_app_data'])
-async def web_app(message: types.Message):
-    res = json.loads(message.web_app_data.data)
-    await message.answer(f'Имя: {res["name"]}. Email: {res["email"]}.Номер телефона: {res["phone"]}')
+# @dp.message_handler(content_types=['web_app_data'])
+# async def web_app(message: types.Message):
+#     res = json.loads(message.web_app_data.data)
+#     await message.answer(f'Имя: {res["name"]}. Email: {res["email"]}.Номер телефона: {res["phone"]}')
 
 executor.start_polling(dp)
