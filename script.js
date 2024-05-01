@@ -5,16 +5,25 @@ const clickButton = document.getElementById('clickButton');
 document.documentElement.ondragstart = () => false;
 
 // Update the counter element with the initial value
-counterElement.innerHTML = `<img class="coin" src="images/40221.png" alt="" /> ${counter}`;
+counterElement.innerHTML = `<img class="coin" src="images/owlcoin.png" alt="" /> ${counter}`;
 
 clickButton.addEventListener('click', (event) => {
     counter++;
-    counterElement.innerHTML = `<img class="coin" src="images/40221.png" alt="" /> ${counter}`;
+    counterElement.innerHTML = `<img class="coin" src="images/owlcoin.png" alt="" /> ${counter}`;
     localStorage.setItem('clickedCoins', counter); // Save the clicked coins to localStorage
+
+    document.getElementById('clickButton').addEventListener('click', function() {
+        this.style.transform = 'scale(0.9)';
+        this.style.transition = 'transform 0.1s';
+      
+        setTimeout(() => {
+          this.style.transform = 'scale(1)';
+        }, 500);
+      });
 
     const animation = document.createElement('div');
     animation.classList.add('animation');
-    animation.innerText = '+1';
+    animation.innerText = '1';
     document.body.appendChild(animation);
     animation.style.position = 'absolute';
     animation.style.left = event.clientX + 'px';
@@ -28,7 +37,7 @@ clickButton.addEventListener('click', (event) => {
 // Retrieve the clicked coins from localStorage on page load
 window.onload = function() {
     counter = localStorage.getItem('clickedCoins') ? parseInt(localStorage.getItem('clickedCoins')) : 0;
-    counterElement.innerHTML = `<img class="coin" src="images/40221.png" alt="" /> ${counter}`;
+    counterElement.innerHTML = `<img class="coin" src="images/owlcoin.png" alt="" /> ${counter}`;
 };
 
 function openModal(modalId) {
@@ -66,7 +75,7 @@ function upgradeClick() {
 
 // Функция для обновления счетчика
 function updateCounter() {
-    counterElement.innerHTML = `<img class="coin" src="images/40221.png" alt="" /> ${counter}`;
+    counterElement.innerHTML = `<img class="coin" src="images/owlcoin.png" alt="" /> ${counter}`;
 }
 
 // Обработчик клика на кнопку
