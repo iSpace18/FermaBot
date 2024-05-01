@@ -10,42 +10,67 @@
     <div class="osn-container">
       <div class="container">
         <div id="counter">
-          <img class="coin" src="images/Coin-PNG-Picture.png" alt="" /> 0
+            <img class="coin" src="images/40221.png" alt="" /> 0
         </div>
         <button id="clickButton">
-          <img src="images/Coin-PNG-Picture.png" alt="" />
+            <img src="images/40221.png" alt="" />
         </button>
-      </div>
-
-      <div class="nav-bottom">
+    </div>
+    <div class="nav-bottom">
         <div style="margin-left: 7px" class="block">
-          <a href="">
-              <img class="friends" src="images/friends.effabaed.svg" alt="" />
-              <p>Друзья</p>
-          </a>
+            <a href="#" onclick="openModal('friends-modal')">
+                <img class="friends" src="images/friends.effabaed.svg" alt="" />
+                <p>Друзья</p>
+            </a>
         </div>
-
         <div class="block">
-          <a href="">
-              <img class="upgrade" src="images/rating.3bd98243.svg" alt="" />
-              <p>Прокачка</p>
-          </a>
+            <a href="#" onclick="openModal('upgrade-modal')">
+                <img class="upgrade" src="images/rating.3bd98243.svg" alt="" />
+                <p>Прокачка</p>
+            </a>
         </div>
-
         <div class="block">
-          <a href="">
-              <img class="mission" src="images/quest.3dd3d11c.svg" alt="" />
-              <p>Задания</p>
-          </a>
+            <a href="#" onclick="openModal('mission-modal')">
+                <img class="mission" src="images/quest.3dd3d11c.svg" alt="" />
+                <p>Задания</p>
+            </a>
         </div>
-
         <div style="margin-right: 7px" class="block">
-          <a href="">
-              <img class="shop" src="images/boost.c303a41a.svg" alt="" />
-              <p>Магазин</p>
-          </a>
+            <a href="#" onclick="openModal('shop-modal')">
+                <img class="shop" src="images/boost.c303a41a.svg" alt="" />
+                <p>Магазин</p>
+            </a>
         </div>
+    </div>
+    
+    <div id="friends-modal" class="modal">
+        <span class="close" onclick="closeModal('friends-modal')">X</span>
+        <p>Содержимое модального окна для Друзей</p>
+    </div>
+    <div id="upgrade-modal" class="modal">
+      <span class="close" onclick="closeModal('upgrade-modal')">X</span>
+      <div class="upgrade-item">
+          <p>Усилить клик</p>
+          <p>Цена: <span id="clickUpgradeCost">50</span> кликов</p>
+          <p>Уровень: <span id="clickUpgradeLevel">1</span></p>
+          <button onclick="upgradeClick()">Купить</button>
       </div>
+      <div class="upgrade-item">
+          <p>Изменение значения</p>
+          <p>Цена: <span id="valueUpgradeCost">50</span> кликов</p>
+          <p>Уровень: <span id="valueUpgradeLevel">1</span></p>
+          <button onclick="upgradeValue()">Купить</button>
+      </div>
+  </div>
+  </div>
+    <div id="mission-modal" class="modal">
+        <span class="close" onclick="closeModal('mission-modal')">X</span>
+        <p>Содержимое модального окна для Заданий</p>
+    </div>
+    <div id="shop-modal" class="modal">
+        <span class="close" onclick="closeModal('shop-modal')">X</span>
+        <p>Содержимое модального окна для Магазина</p>
+    </div>
     </div>
 
     <script src="script.js"></script>

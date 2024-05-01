@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(62, 62, 62);
   user-select: none;
 }
 
@@ -19,9 +19,10 @@ body {
   max-width: 560px;
   height: 645px;
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  background: linear-gradient(135deg, #e55d88a4 0%, #5fc3e4ab 100%);
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 69%, rgba(0, 0, 0, 1) 100%);
 }
 
 .container {
@@ -42,6 +43,7 @@ body {
   display: block;
   width: 30px;
   height: 30px;
+  filter: invert();
 }
 
 #clickButton {
@@ -67,11 +69,11 @@ body {
   100% { opacity: 0; transform: translateY(-100px); }
 }
 .animation {
-  background-color: rgba(0, 0, 0, 0.5); /* Black semi-transparent background */
-  color: white; /* White text color */
-  font-weight: bold; /* Bold text */
-  font-size: 1.2em; /* Slightly larger font size */
-  padding: 5px; /* Padding around the text */
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  font-weight: bold; 
+  font-size: 1.2em; 
+  padding: 5px; 
 }
 
 
@@ -85,4 +87,54 @@ body {
   display: block;
   background-color: #ffffff3f;
   margin-bottom: 20px;
+}
+.block a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 560px; /* Set maximum width */
+  height: 645px; /* Set height */
+  background-color: rgba(0, 0, 0, 0.757);
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  text-align: center;
+  color: black; /* Set text color to black */
+}
+
+.upgrade-item {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upgrade-item p {
+  margin: 0;
+}
+
+.upgrade-item button {
+  background-color: #000000;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 1px;
+  right: 8px;
+  cursor: pointer;
 }
