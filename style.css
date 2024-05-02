@@ -54,6 +54,7 @@ body {
 }
 
 #clickButton {
+  
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -64,8 +65,8 @@ body {
 
 #clickButton > img {
   margin-left: -50px;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .nav-bottom {
