@@ -8,6 +8,7 @@
 }
 
 body {
+  overflow-y: hidden;
   font-family: Arial, sans-serif;
   background-color: rgb(62, 62, 62);
   user-select: none;
