@@ -9,7 +9,7 @@ dp = Dispatcher(bot)
 async def start(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
     markup.add(types.KeyboardButton('Открыть веб страницу', web_app=WebAppInfo(url='https://ispace18.github.io/FermaBot/')))
-    await message.answer('Привет, чтобы начать игру, нажмите кнопку внизу 👇 ', reply_markup=markup)
+    await message.answer('Привет, чтобы начать игру, нажмите кнопку снизу 👇 ', reply_markup=markup)
 
 
 
@@ -19,3 +19,5 @@ async def start(message: types.Message):
 #     await message.answer(f'Имя: {res["name"]}. Email: {res["email"]}.Номер телефона: {res["phone"]}')
 
 executor.start_polling(dp)
+
+# FERMABOT/TelegaBot/FermaBot.py
