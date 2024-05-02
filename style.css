@@ -20,8 +20,8 @@ body {
 .osn-container {
   padding-top: 45px;
   margin: 0 auto;
-  max-width: 375px;
-  max-height: 667px;
+  max-width: 560px;
+  max-height: 643px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
