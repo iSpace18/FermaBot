@@ -1,159 +1,49 @@
-* {
-  padding: 0;
-  margin: 0;
-  color: white;
-  text-decoration: none;
-  overflow-y: hidden;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: rgb(62, 62, 62);
-  user-select: none;
-}
-
-@font-face {
-  font-family: 16862otf;
-  src: url(/fonts/16862.otf);
-}
-
-.osn-container {
-  padding-bottom: 20px;
-  display: flex;
-  padding-top: 45px;
-  margin: 0 auto;
-  width: 100%;
-  height: 670px;
-  max-height: 80%;
-  max-width: 35rem;
-  min-width: 17.5rem;
-  flex-direction: column;
-  box-sizing: border-box;
-  justify-content: space-between;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(black, rgb(82, 46, 24), rgb(82, 46, 24), black);
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: var(--tg-theme-text-color);
+	background: var(--tg-theme-bg-color);
 }
 
 .container {
-  text-align: center;
+
+	margin: 0 auto;
+  background-color: aqua;
+	max-width: 390px;
 }
 
-#counter {
-  display: block;
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 50px;
-  font-family: 16862otf;
+.inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 200px 200px 200px;
 }
 
-.coin {
-  /* position: absolute;
-  left: 170px; */
-  /* display: block; */
-  width: 50px;
-  height: 50px;
+.img {
+	width: 150px;
 }
 
-#clickButton {
-  
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  margin-bottom: 50px;
+.item {
+	text-align: center;
 }
 
-#clickButton > img {
-  margin-left: -50px;
-  height: 300px;
-  width: 300px;
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	background: rgb(248, 168, 24);
+	border-radius: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+
+	transition: background .2s linear;
 }
 
-.nav-bottom {
-  display: flex;
-}
-@keyframes floatUp {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-}
-.animation {
-  background-color: rgba(15, 15, 15, 0.137);
-  color: rgb(255, 254, 254);
-  font-weight: bold;
-  font-size: 1.2em;
-  padding: 5px;
+.btn:hover {
+	background: lightgreen;
 }
 
-.block {
-  
-  font-size: 15px;
-  margin-left: 5px;
-  padding: 5px;
-  border-radius: 7px;
-  text-align: center;
-  flex: 1;
-  display: block;
-  background-color: #ffffff17;
-  margin-bottom: 20px;
-}
-.block a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-.modal {
-  display: none;
-  position: fixed;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  max-width: 560px; /* Set maximum width */
-  height: 645px; /* Set height */
-  background-color: rgba(0, 0, 0, 0.757);
-  z-index: 9999;
-  padding: 20px;
-  box-sizing: border-box;
-  overflow: auto;
-  text-align: center;
-  color: black; /* Set text color to black */
-}
-
-.upgrade-item {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.upgrade-item p {
-  margin: 0;
-}
-
-.upgrade-item button {
-  background-color: #000000;
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.close {
-  position: absolute;
-  top: 1px;
-  right: 8px;
-  cursor: pointer;
+.usercard {
+	text-align: center;
 }
